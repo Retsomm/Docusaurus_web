@@ -69,7 +69,15 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-7KJZMT5GD8', // 您的 Google Analytics ID
+        anonymizeIP: true, // 可選：啟用匿名化 IP
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
